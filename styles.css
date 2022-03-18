@@ -1,3 +1,7 @@
+.container {
+  padding-left: 32%;
+}
+
 .grid {
   border: 1px solid black;
   height: 540px;
@@ -19,22 +23,57 @@
   background-color: blue;
 }
 
-.l1, .l2, .l3 {
-    background-color: brown;
+.l1,
+.l2,
+.l3 {
+  background-color: brown;
 }
 
-.l4, .l5 {
-    background-color: lightblue;
+.l4,
+.l5 {
+  background-color: lightblue;
 }
 
 .c1 {
-    background-color: black;
+  background-color: black;
 }
 
-.c2, .c3 {
-    background-color: lightgrey;
+.c2,
+.c3 {
+  background-color: lightgrey;
 }
 
 .frog {
-    background-color: green;
+  background-color: green;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding-left: 20%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    padding-left: 5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding-left: 5%;
+  }
+
+  .grid {
+    border: 1px solid black;
+    height: 360px;
+    width: 360px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .grid div {
+    height: 40px;
+    width: 40px;
+  }
 }
